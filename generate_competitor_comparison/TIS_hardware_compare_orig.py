@@ -1,5 +1,7 @@
 ##
 # TIS_hardware_compare_orig.py
+
+
 """
 Generate a Titanium vs competitor comparison Excel file using the OpenAI Responses API.
 
