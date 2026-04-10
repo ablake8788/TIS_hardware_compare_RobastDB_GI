@@ -1,0 +1,10 @@
+Step 1 — Extract:
+powershellExpand-Archive -Path tis_gap_app.zip -DestinationPath . -Force
+Step 2 — Enter the folder:
+powershellcd tis_gap_app
+Step 3 — Install packages:
+powershellpip install -r requirements.txt
+Step 4 — Run the app:
+powershellpython app.py
+Then open http://localhost:5000 in your browser.
+You can enter your API key inside the app UI on Step 1 — no export command needed.

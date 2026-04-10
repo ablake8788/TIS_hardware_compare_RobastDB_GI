@@ -1,0 +1,6 @@
+unzip tis_gap_app.zip
+cd tis_gap_app
+pip install -r requirements.txt
+export OPENAI_API_KEY=sk-...        # or ANTHROPIC_API_KEY
+python app.py
+# → open http://localhost:5000
