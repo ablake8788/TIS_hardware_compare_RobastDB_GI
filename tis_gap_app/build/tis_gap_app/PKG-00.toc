@@ -1,0 +1,672 @@
+('C:\\Ara\\Python\\Titanium Inteligent '
+ 'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\TIS_GapAnalysis.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('app',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\app.py',
+   'PYSOURCE'),
+  ('python313.dll',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Scripts\\python313.dll',
+   'BINARY'),
+  ('unicodedata.pyd',
+   'C:\\Program Files\\Python\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd', 'C:\\Program Files\\Python\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2.pyd', 'C:\\Program Files\\Python\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Program Files\\Python\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Program Files\\Python\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('select.pyd', 'C:\\Program Files\\Python\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_socket.pyd', 'C:\\Program Files\\Python\\DLLs\\_socket.pyd', 'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Program Files\\Python\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd', 'C:\\Program Files\\Python\\DLLs\\_ssl.pyd', 'EXTENSION'),
+  ('_queue.pyd', 'C:\\Program Files\\Python\\DLLs\\_queue.pyd', 'EXTENSION'),
+  ('_ctypes.pyd', 'C:\\Program Files\\Python\\DLLs\\_ctypes.pyd', 'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Program Files\\Python\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd', 'C:\\Program Files\\Python\\DLLs\\pyexpat.pyd', 'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Program Files\\Python\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd', 'C:\\Program Files\\Python\\DLLs\\_wmi.pyd', 'EXTENSION'),
+  ('markupsafe\\_speedups.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe\\_speedups.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd', 'C:\\Program Files\\Python\\DLLs\\_uuid.pyd', 'EXTENSION'),
+  ('_zoneinfo.pyd',
+   'C:\\Program Files\\Python\\DLLs\\_zoneinfo.pyd',
+   'EXTENSION'),
+  ('pydantic_core\\_pydantic_core.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('jiter\\jiter.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\jiter\\jiter.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\etree.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\etree.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\_elementpath.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\_elementpath.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\sax.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\sax.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\objectify.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\objectify.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\html\\diff.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\html\\diff.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\html\\_difflib.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\html\\_difflib.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\builder.cp313-win_amd64.pyd',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\builder.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Scripts\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Program Files\\Python\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll', 'C:\\Program Files\\Python\\DLLs\\libssl-3.dll', 'BINARY'),
+  ('libffi-8.dll', 'C:\\Program Files\\Python\\DLLs\\libffi-8.dll', 'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Program Files\\Python\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\ucrtbase.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-fibers-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-fibers-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('docx\\py.typed',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\py.typed',
+   'DATA'),
+  ('docx\\templates\\default-comments.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-comments.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\[Content_Types].xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\[Content_Types].xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\_rels\\.rels',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\_rels\\.rels',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\customXml\\_rels\\item1.xml.rels',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\customXml\\_rels\\item1.xml.rels',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\customXml\\item1.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\customXml\\item1.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\customXml\\itemProps1.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\customXml\\itemProps1.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\docProps\\app.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\docProps\\app.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\docProps\\core.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\docProps\\core.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\docProps\\thumbnail.jpeg',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\docProps\\thumbnail.jpeg',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\_rels\\document.xml.rels',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\_rels\\document.xml.rels',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\document.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\document.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\fontTable.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\fontTable.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\numbering.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\numbering.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\settings.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\settings.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\styles.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\styles.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\stylesWithEffects.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\stylesWithEffects.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\theme\\theme1.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\theme\\theme1.xml',
+   'DATA'),
+  ('docx\\templates\\default-docx-template\\word\\webSettings.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-docx-template\\word\\webSettings.xml',
+   'DATA'),
+  ('docx\\templates\\default-footer.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-footer.xml',
+   'DATA'),
+  ('docx\\templates\\default-header.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-header.xml',
+   'DATA'),
+  ('docx\\templates\\default-settings.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-settings.xml',
+   'DATA'),
+  ('docx\\templates\\default-styles.xml',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default-styles.xml',
+   'DATA'),
+  ('docx\\templates\\default.docx',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\docx\\templates\\default.docx',
+   'DATA'),
+  ('flask\\py.typed',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask\\py.typed',
+   'DATA'),
+  ('flask\\sansio\\README.md',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask\\sansio\\README.md',
+   'DATA'),
+  ('static\\css\\style.css',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\static\\css\\style.css',
+   'DATA'),
+  ('static\\js\\app.js',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\static\\js\\app.js',
+   'DATA'),
+  ('templates\\index.html',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\templates\\index.html',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\certifi\\py.typed',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\XSD2Schtrn.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\XSD2Schtrn.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_svrl_for_xslt1.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_svrl_for_xslt1.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\readme.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\readme.txt',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\rng\\iso-schematron.rng',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\rng\\iso-schematron.rng',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_dsdl_include.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_dsdl_include.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_skeleton_for_xslt1.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_skeleton_for_xslt1.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_abstract_expand.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_abstract_expand.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\RNG2Schtrn.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\RNG2Schtrn.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_message.xsl',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_message.xsl',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\WHEEL',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\METADATA',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\RECORD',
+   'DATA'),
+  ('pydantic-2.12.5.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\pydantic-2.12.5.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\RECORD',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\WHEEL',
+   'DATA'),
+  ('click-8.3.2.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\click-8.3.2.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('werkzeug-3.1.8.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\werkzeug-3.1.8.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\top_level.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\top_level.txt',
+   'DATA'),
+  ('pydantic-2.12.5.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\pydantic-2.12.5.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-3.1.8.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\werkzeug-3.1.8.dist-info\\WHEEL',
+   'DATA'),
+  ('pydantic-2.12.5.dist-info\\licenses\\LICENSE',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\pydantic-2.12.5.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('click-8.3.2.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\click-8.3.2.dist-info\\WHEEL',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\RECORD',
+   'DATA'),
+  ('pydantic-2.12.5.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\pydantic-2.12.5.dist-info\\WHEEL',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.3.2.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\click-8.3.2.dist-info\\METADATA',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\WHEEL',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-3.1.8.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\werkzeug-3.1.8.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.3.2.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\click-8.3.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.3.2.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\click-8.3.2.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\top_level.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\top_level.txt',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\REQUESTED',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\REQUESTED',
+   'DATA'),
+  ('werkzeug-3.1.8.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\werkzeug-3.1.8.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\entry_points.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pydantic-2.12.5.dist-info\\RECORD',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\pydantic-2.12.5.dist-info\\RECORD',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\entry_points.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('flask-3.1.3.dist-info\\METADATA',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\flask-3.1.3.dist-info\\METADATA',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\WHEEL',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-3.1.8.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\werkzeug-3.1.8.dist-info\\INSTALLER',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\INSTALLER',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('tqdm-4.67.3.dist-info\\licenses\\LICENCE',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\.venv\\Lib\\site-packages\\tqdm-4.67.3.dist-info\\licenses\\LICENCE',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Ara\\Python\\Titanium Inteligent '
+   'Soultions\\TIS_hardware_compare_RobastDB_GIT\\tis_gap_app\\build\\tis_gap_app\\base_library.zip',
+   'DATA')],
+ 'python313.dll',
+ False,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
