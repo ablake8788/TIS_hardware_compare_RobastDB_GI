@@ -1,3 +1,28 @@
+# Every folder that contains Python files you import from needs one:
+# tis_gap_app\
+#   config\
+#     __init__.py       ← needed so you can do: from config.ini_config import ...
+#     ini_config.py
+#     presets.py
+#   domain\
+#     __init__.py       ← needed so you can do: from domain.models import ...
+#     models.py
+#   services\
+#     __init__.py       ← needed
+#     analysis_service.py
+#   adapters\
+#     __init__.py       ← needed
+#     llm_openai.py
+#   renderers\
+#     __init__.py       ← needed
+#     docx_renderer.py
+#   ports\
+#     __init__.py       ← needed
+#     llm.py
+# They can be completely empty files — just their presence is enough. Think of them as a flag that says "this folder is a Python package, imports are allowed."
+
+
+
 """
 Flask web application - delivery layer.
 Controller translates HTTP requests into domain Inputs, calls the use case,
@@ -11,6 +36,7 @@ from flask import Flask, render_template, request, jsonify, send_file
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config.ini_config import get_settings
+##from tis_gap_app.app_factory import create_app_services
 from app_factory import create_app_services
 from config.presets import COMPETITORS, COMPANIES_IN_SCOPE, DEFAULT_HARDWARE
 from domain.models import AnalysisInputs, HardwareItem, CompetitorConfig
