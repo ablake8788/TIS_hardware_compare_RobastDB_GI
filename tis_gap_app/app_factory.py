@@ -4,25 +4,30 @@ This module wires port interfaces to concrete adapters.
 No business logic should appear here.
 """
 import os
-
 from services.analysis_service import AnalysisService
+from config.ini_config import get_settings
+
+_ini_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tis_gap_app.ini')
+_cfg = get_settings(ini_path=_ini_path)
 
 
-def create_app_services(provider: str = "openai") -> AnalysisService:
-    """
-    Wire concrete adapters to ports and return a ready AnalysisService.
-
-    provider: "openai" | "anthropic"
-    """
-    reports_dir = os.path.join(os.path.dirname(__file__), "reports")
+def create_app_services(provider: str = "openai", api_key_override: str = "") -> AnalysisService:
+    reports_dir = _cfg.report_location
 
     if provider == "anthropic":
         from adapters.llm_anthropic import AnthropicAdapter
-        api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+        api_key = (
+            api_key_override
+            or os.environ.get("ANTHROPIC_API_KEY", "")
+        )
         llm_port = AnthropicAdapter(api_key=api_key)
     else:
         from adapters.llm_openai import OpenAIAdapter
-        api_key = os.environ.get("OPENAI_API_KEY", "")
-        llm_port = OpenAIAdapter(api_key=api_key)
+        api_key = (
+            api_key_override
+            or _cfg.openai.api_key
+            or os.environ.get("OPENAI_API_KEY", "")
+        )
+        llm_port = OpenAIAdapter(api_key=api_key, model=_cfg.openai.model)
 
     return AnalysisService(llm_port=llm_port, reports_dir=reports_dir)

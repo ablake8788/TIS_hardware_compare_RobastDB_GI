@@ -153,14 +153,29 @@ async function runAnalysis() {
   runLabel.textContent = 'Running…';
   status.innerHTML = '<div class="spinner active"></div> Sending to AI — this may take 20–40 seconds…';
 
+
+  // Just set api_key to empty string '' — the server will always use the key from the INI file.
+  // ****************
   const payload = {
-    competitor_slug: isCustom ? '' : sel.value,
+    competitor_slug:        isCustom ? '' : sel.value,
     custom_competitor_name: isCustom ? document.getElementById('custom-name').value : '',
     custom_competitor_url:  isCustom ? document.getElementById('custom-url').value  : '',
     provider: document.getElementById('provider-select').value,
-    api_key:  document.getElementById('api-key').value,
+    api_key:  '',
     hardware: hw,
-  };
+};
+//#################
+
+
+  // const payload = {
+  //   competitor_slug: isCustom ? '' : sel.value,
+  //   custom_competitor_name: isCustom ? document.getElementById('custom-name').value : '',
+  //   custom_competitor_url:  isCustom ? document.getElementById('custom-url').value  : '',
+  //   provider: document.getElementById('provider-select').value,
+  //   api_key:  document.getElementById('api-key').value,
+  //   hardware: hw,
+  // };
+
 
   try {
     const res  = await fetch('/api/analyze', {
@@ -223,7 +238,7 @@ function renderResults(data) {
       <td class="hw-using">${esc(r.companies_using || 'None')}</td>
       <td><span class="pill ${titCls}">${r.titanium}</span></td>
       <td><span class="pill ${compCls}">${r.competitor}</span></td>
-      <td class="hw-notes">${esc(r.competitor_notes || '')}</td>
+<!--      <td class="hw-notes">${esc(r.competitor_notes || '')}</td>-->
     </tr>`;
   }).join('');
 
@@ -262,6 +277,40 @@ function esc(str) {
 }
 
 /* ── Init ─────────────────────────────────────────────────────────────────── */
+
+// add new functionality
+// document.addEventListener('DOMContentLoaded', () => {
+//   loadDefaults();
+// });
 document.addEventListener('DOMContentLoaded', () => {
   loadDefaults();
+  loadConfig();
 });
+
+async function loadConfig() {
+  try {
+    const res  = await fetch('/api/config');
+    const cfg  = await res.json();
+
+    const keyInput   = document.getElementById('api-key');
+    const keyLabel   = document.getElementById('api-key-label');
+    const modelInfo  = document.getElementById('provider-select');
+
+    if (cfg.api_key_set) {
+      keyInput.value       = '**************';
+      keyInput.readOnly    = true;
+      keyInput.placeholder = '';
+
+      keyInput.readOnly    = true;
+      keyInput.title       = 'API key loaded from tis_gap_app.ini';
+      keyInput.style.color = 'var(--gray-400)';
+      keyLabel.innerHTML   = `API key <span class="optional">(loaded from ini — model: ${cfg.model})</span>`;
+    } else {
+      keyInput.readOnly    = false;
+      keyInput.placeholder = 'sk-… (not found in ini)';
+      keyLabel.innerHTML   = `API key <span class="optional" style="color:var(--red)">not found in tis_gap_app.ini — enter manually</span>`;
+    }
+  } catch(e) {
+    console.warn('Could not load config:', e);
+  }
+}

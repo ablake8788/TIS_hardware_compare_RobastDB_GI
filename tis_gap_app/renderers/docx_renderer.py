@@ -163,9 +163,13 @@ def render_docx(result: AnalysisResult, output_path: str) -> str:
     # ── Comparison table ──────────────────────────────────────────────────────
     _add_section_heading(doc, "Hardware Comparison Matrix")
 
+    # headers = ["Hardware", "Description", "Companies Using", "Titanium",
+    #            result.competitor.name, "Notes"]
     headers = ["Hardware", "Description", "Companies Using", "Titanium",
-               result.competitor.name, "Notes"]
-    col_widths = [Inches(1.4), Inches(2.0), Inches(1.4), Inches(0.7), Inches(0.85), Inches(1.35)]
+               result.competitor.name]
+    col_widths = [Inches(1.6), Inches(2.4), Inches(1.8), Inches(0.9), Inches(1.1)]
+
+    # col_widths = [Inches(1.4), Inches(2.0), Inches(1.4), Inches(0.7), Inches(0.85), Inches(1.35)]
 
     table = doc.add_table(rows=1, cols=len(headers))
     table.alignment = WD_TABLE_ALIGNMENT.LEFT
@@ -186,27 +190,47 @@ def render_docx(result: AnalysisResult, output_path: str) -> str:
         use_alt = (idx % 2 == 1)
         base_fill = ALT_ROW if use_alt else "FFFFFF"
 
+        # values = [
+        #     row.hardware, row.description, row.companies_using,
+        #     row.titanium, row.competitor, row.competitor_notes
+        # ]
+        # fills_row = [
+        #     base_fill, base_fill, base_fill,
+        #     (GREEN_FILL if row.titanium == "Yes" else RED_FILL),
+        #     (GREEN_FILL if row.competitor == "Yes"
+        #      else YELLOW_FILL if row.competitor == "Partial"
+        #      else RED_FILL),
+        #     base_fill
+        # ]
+        # text_colors_row = [
+        #     "000000", "444444", "444444",
+        #     ("375623" if row.titanium == "Yes" else "9C0006"),
+        #     ("375623" if row.competitor == "Yes"
+        #      else "7D4A00" if row.competitor == "Partial"
+        #      else "9C0006"),
+        #     "555555"
+        # ]
+        # bolds = [True, False, False, True, True, False]
+
         values = [
             row.hardware, row.description, row.companies_using,
-            row.titanium, row.competitor, row.competitor_notes
+            row.titanium, row.competitor
         ]
         fills_row = [
             base_fill, base_fill, base_fill,
             (GREEN_FILL if row.titanium == "Yes" else RED_FILL),
             (GREEN_FILL if row.competitor == "Yes"
              else YELLOW_FILL if row.competitor == "Partial"
-             else RED_FILL),
-            base_fill
+            else RED_FILL),
         ]
         text_colors_row = [
             "000000", "444444", "444444",
             ("375623" if row.titanium == "Yes" else "9C0006"),
             ("375623" if row.competitor == "Yes"
              else "7D4A00" if row.competitor == "Partial"
-             else "9C0006"),
-            "555555"
+            else "9C0006"),
         ]
-        bolds = [True, False, False, True, True, False]
+        bolds = [True, False, False, True, True]
 
         for i, (val, fill, tc, bold, w) in enumerate(
                 zip(values, fills_row, text_colors_row, bolds, col_widths)):

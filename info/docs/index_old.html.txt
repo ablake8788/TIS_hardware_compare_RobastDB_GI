@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TIS Hardware Gap Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+
+<!-- ── Sidebar ─────────────────────────────────────────────────────────────-->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-mark">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <rect x="1" y="1" width="9" height="9" rx="2" fill="white" opacity="0.9"/>
+        <rect x="12" y="1" width="9" height="9" rx="2" fill="white" opacity="0.6"/>
+        <rect x="1" y="12" width="9" height="9" rx="2" fill="white" opacity="0.6"/>
+        <rect x="12" y="12" width="9" height="9" rx="2" fill="white" opacity="0.3"/>
+      </svg>
+    </div>
+    <div>
+      <div class="logo-title">TIS Gap Analysis</div>
+      <div class="logo-sub">Hardware Intelligence</div>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="nav-item active" data-step="1" onclick="goStep(1)">
+      <span class="nav-num">01</span> Configure
+    </a>
+    <a class="nav-item" data-step="2" onclick="goStep(2)">
+      <span class="nav-num">02</span> Hardware List
+    </a>
+    <a class="nav-item" data-step="3" onclick="goStep(3)">
+      <span class="nav-num">03</span> Run Analysis
+    </a>
+    <a class="nav-item" data-step="4" id="nav-results" onclick="goStep(4)" style="opacity:0.4;pointer-events:none;">
+      <span class="nav-num">04</span> Results
+    </a>
+  </nav>
+
+  <div class="sidebar-info">
+    <div class="info-label">Architecture</div>
+    <div class="info-line">Ports &amp; Adapters</div>
+    <div class="info-line">Clean separation</div>
+    <div class="info-line">Swappable LLM</div>
+  </div>
+</aside>
+
+<!-- ── Main ────────────────────────────────────────────────────────────────-->
+<main class="main">
+
+  <!-- Step 1: Configure -->
+  <section class="step active" id="step-1">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 01</div>
+      <h1 class="step-title">Configure comparison</h1>
+      <p class="step-desc">Select a competitor from the preset list. Their website will be used as context for the AI analysis.</p>
+    </div>
+
+    <div class="form-grid">
+      <div class="field-group">
+        <label>Select competitor</label>
+        <select id="competitor-select" onchange="onCompetitorChange()">
+          <option value="">— choose a competitor —</option>
+          {% for c in competitors %}
+          <option value="{{ c.slug }}" data-url="{{ c.url }}" data-name="{{ c.name }}">{{ c.name }}</option>
+          {% endfor %}
+          <option value="__custom__">+ Custom competitor…</option>
+        </select>
+      </div>
+
+      <div class="field-group" id="comp-url-group">
+        <label>Competitor website</label>
+        <input type="text" id="competitor-url" placeholder="https://example.com" readonly/>
+      </div>
+
+      <div class="field-group" id="custom-name-group" style="display:none;">
+        <label>Custom competitor name</label>
+        <input type="text" id="custom-name" placeholder="e.g. Acme Controls"/>
+      </div>
+      <div class="field-group" id="custom-url-group" style="display:none;">
+        <label>Custom competitor website</label>
+        <input type="text" id="custom-url" placeholder="https://acmecontrols.com"/>
+      </div>
+    </div>
+
+    <div class="card-divider"></div>
+
+    <div class="form-grid">
+      <div class="field-group">
+        <label>LLM provider</label>
+        <select id="provider-select" onchange="onProviderChange()">
+          <option value="openai">OpenAI (GPT-4o)</option>
+          <option value="anthropic">Anthropic (Claude)</option>
+        </select>
+      </div>
+      <div class="field-group">
+        <label id="api-key-label">OpenAI API key <span class="optional">(or set OPENAI_API_KEY env)</span></label>
+        <input type="password" id="api-key" placeholder="sk-…"/>
+      </div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn primary" onclick="goStep(2)">Next: Hardware list →</button>
+    </div>
+  </section>
+
+  <!-- Step 2: Hardware List -->
+  <section class="step" id="step-2">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 02</div>
+      <h1 class="step-title">Titanium hardware list</h1>
+      <p class="step-desc">This is the source of truth. Edit, add, or remove rows. The <strong>Titanium</strong> column marks whether Titanium offers this hardware.</p>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn sm" onclick="addRow()">+ Add row</button>
+      <button class="btn sm secondary" onclick="loadDefaults()">↺ Reset to defaults</button>
+      <button class="btn sm danger" onclick="clearAll()">✕ Clear all</button>
+      <div class="toolbar-right">
+        <span class="row-count" id="row-count">0 rows</span>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="hw-table" id="hw-table">
+        <thead>
+          <tr>
+            <th class="col-hw">Hardware name</th>
+            <th class="col-desc">Description</th>
+            <th class="col-tit">Titanium?</th>
+            <th class="col-del"></th>
+          </tr>
+        </thead>
+        <tbody id="hw-body"></tbody>
+      </table>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn ghost" onclick="goStep(1)">← Back</button>
+      <button class="btn primary" onclick="goStep(3)">Next: Run analysis →</button>
+    </div>
+  </section>
+
+  <!-- Step 3: Run -->
+  <section class="step" id="step-3">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 03</div>
+      <h1 class="step-title">Run analysis</h1>
+      <p class="step-desc">Review your configuration, then start the AI comparison. The analysis uses conservative matching logic — Partial is preferred over Yes when overlap is indirect.</p>
+    </div>
+
+    <div class="review-cards" id="review-cards">
+      <!-- filled by JS -->
+    </div>
+
+    <div class="run-panel">
+      <button class="btn primary large" id="run-btn" onclick="runAnalysis()">
+        <span id="run-label">▶ Start analysis</span>
+      </button>
+      <div class="run-status" id="run-status"></div>
+    </div>
+
+    <div class="step-actions">
+      <button class="btn ghost" onclick="goStep(2)">← Back</button>
+    </div>
+  </section>
+
+  <!-- Step 4: Results -->
+  <section class="step" id="step-4">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 04</div>
+      <h1 class="step-title">Comparison results</h1>
+      <p class="step-desc" id="result-sub">Analysis complete.</p>
+    </div>
+
+    <div class="summary-bar" id="summary-bar"></div>
+
+    <div class="result-toolbar">
+      <div class="filter-group">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active" data-filter="all" onclick="applyFilter('all')">All</button>
+        <button class="filter-btn yes" data-filter="Yes" onclick="applyFilter('Yes')">Yes</button>
+        <button class="filter-btn partial" data-filter="Partial" onclick="applyFilter('Partial')">Partial</button>
+        <button class="filter-btn no" data-filter="No" onclick="applyFilter('No')">No</button>
+      </div>
+      <button class="btn primary sm" id="download-btn" onclick="downloadReport()" style="display:none;">
+        ⬇ Download Word report (.docx)
+      </button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="result-table" id="result-table">
+        <thead>
+          <tr>
+            <th class="rh-hw">Hardware</th>
+            <th class="rh-desc">Description</th>
+            <th class="rh-using">Companies using</th>
+            <th class="rh-tit">Titanium</th>
+            <th class="rh-comp" id="comp-col-hdr">Competitor</th>
+            <th class="rh-notes">Notes</th>
+          </tr>
+        </thead>
+        <tbody id="result-body"></tbody>
+      </table>
+    </div>
+
+    <p class="disclaimer">⚠ AI-generated analysis — verify against official product documentation before use in sales or procurement decisions.</p>
+
+    <div class="step-actions">
+      <button class="btn ghost" onclick="goStep(1)">← Start new analysis</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
